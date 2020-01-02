@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ba"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    tools:context="com.example.level0.Quizes.QuizCatalogue">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/quiz2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewquiz3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-9066719717930706/7544183726"
+                android:layout_margin="5dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الـسـنـة الاولـي "
+                android:textSize="25dp"
+                android:textColor="@color/Black"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/hightscore1T"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HighScore: 0 "
+                    android:textSize="15sp"
+                    android:textColor="@color/Red"
+                    android:textAlignment="center"
+
+                    />
+
+                <Button
+                    android:id="@+id/quiz1t"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_button"
+                    android:text="بدأ اختبار الطقس "
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Green"
+                    android:onClick="quiz1t"
+                    android:layout_marginLeft="15dp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/hightscore1C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HighScore: 0"
+                    android:textSize="15sp"
+                    android:textColor="@color/Red"
+                    android:textAlignment="center"
+                    />
+
+                <Button
+                    android:id="@+id/quiz1c"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_button"
+                    android:text="بدأ اختبار القبطي "
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Green"
+                    android:onClick="quiz1c"
+
+                    />
+
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewquiz2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-9066719717930706/7544183726"
+                android:layout_margin="5dp"
+
+                />
+
+            <TextView
+                android:id="@+id/bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الـسـنــة الـثـانـيـة "
+                android:textSize="25dp"
+                android:textColor="@color/Black"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/hightscore2T"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HighScore: 0"
+                    android:textSize="15sp"
+                    android:textColor="@color/Red"
+                    android:textAlignment="center"
+                    />
+
+                <Button
+                    android:id="@+id/quiz2t"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_button"
+                    android:text="بدأ اختبار الطقس "
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Green"
+                    android:onClick="quiz2t"
+                    android:layout_marginLeft="15dp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/hightscore2C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HighScore: 0"
+                    android:textSize="15sp"
+                    android:textColor="@color/Red"
+                    android:textAlignment="center"
+                    />
+
+                <Button
+                    android:id="@+id/quiz2c"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_button"
+                    android:text="بدأ اختبار القبطي  "
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Green"
+                    android:onClick="quiz2c"
+
+                    />
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewquiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-9066719717930706/7544183726"
+                android:layout_margin="5dp"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

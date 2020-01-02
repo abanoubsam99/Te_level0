@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.level0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo0"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Morag3a"></activity>
+        <activity
+            android:name=".Quizes.Quiz2C"
+            android:parentActivityName=".Quizes.QuizCatalogue" />
+        <activity
+            android:name=".Quizes.Quiz2T"
+            android:parentActivityName=".Quizes.QuizCatalogue" />
+        <activity
+            android:name=".Quizes.Quiz1C"
+            android:parentActivityName=".Quizes.QuizCatalogue" />
+        <activity
+            android:name=".Quizes.Quiz1T"
+            android:parentActivityName=".Quizes.QuizCatalogue" />
+        <activity
+            android:name=".Quizes.QuizCatalogue"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Games.FIND"
+            android:parentActivityName=".Games.games" />
+        <activity
+            android:name=".Games.XO"
+            android:parentActivityName=".Games.games" />
+        <activity
+            android:name=".Games.games"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Tamhidy_2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Tamhidy_1"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".well">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9066719717930706~6805817120" />
+    </application>
+
+</manifest>

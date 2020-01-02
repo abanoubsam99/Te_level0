@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ba"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".Coptic.C01">
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewC1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:layout_constraintBottom_toTopOf="@+id/pdfView_C01"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:adUnitId="ca-app-pub-9066719717930706/7544183726"
+    />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView_C01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2sp"
+        android:layout_marginBottom="2sp"
+        android:layout_weight="1"/>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewC2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:layout_constraintBottom_toTopOf="@+id/pdfView_C01"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:adUnitId="ca-app-pub-9066719717930706/7544183726"
+        />
+</LinearLayout>

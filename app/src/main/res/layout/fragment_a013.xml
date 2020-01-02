@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ba"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".Al7an.A013"
+    tools:layout_editor_absoluteY="25dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+
+        >
+
+        <Spinner
+            android:id="@+id/spinner_A013"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shafaf22"
+            android:entries="@array/A013"
+
+            android:layoutDirection="ltr"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            tools:layout_editor_absoluteX="238dp"
+            tools:layout_editor_absoluteY="6dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timestart_013"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0:0"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+
+            />
+
+        <SeekBar
+
+            android:id="@+id/seekBar_A013"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/timeend_013"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0:0"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:layout_weight="1"
+
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/puse_A013"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/bt"
+            android:clickable="true"
+            android:src="@android:drawable/ic_media_pause"
+            app:backgroundTint="@color/shafaf"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/play_A013"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+
+            android:backgroundTint="@color/bt"
+            android:clickable="true"
+            android:src="@android:drawable/ic_media_play"
+            app:backgroundTint="@color/shafaf"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/puse_A013" />
+
+
+    </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView_A013"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/COPTIC_A013"
+                style="@style/Coptic"
+                android:layout_marginBottom="7dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin=".8dp"
+                android:layout_weight="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/Ca_A013"
+                style="@style/CopticArab"
+                android:layout_marginBottom="7dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin=".8dp"
+                android:layout_weight="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/ARAB_A013"
+                style="@style/Arabic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="7dp"
+
+                android:layout_margin=".8dp"
+                android:layout_weight="1"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="1dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9066719717930706/7544183726"
+        ads:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="681dp" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar2"
+    android:layout_width="match_parent"
+    android:layout_height="55sp"
+    android:background="@drawable/ba"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="?attr/actionBarTheme"
+    android:layoutDirection="ltr"
+    >
+
+
+</android.support.v7.widget.Toolbar>

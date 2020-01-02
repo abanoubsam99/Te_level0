@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/catalog_01"
+            android:icon="@drawable/catalog"
+            android:title="خريطة الالحان "
+            />
+        <item
+            android:id="@+id/t1_01"
+            android:icon="@drawable/first"
+            android:title="الترم الاول" />
+        <item
+            android:id="@+id/t2_01"
+            android:icon="@drawable/ic_looks_two_black_24dp"
+            android:title="الترم الثاني" />
+        <item
+            android:id="@+id/t3_01"
+            android:icon="@drawable/third"
+            android:title="الترم الثالث" />
+    </group>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/C_01"
+                android:icon="@drawable/copt"
+                android:title="قبطي" />
+            <item
+                android:id="@+id/T_01"
+                android:icon="@drawable/tak"
+                android:title="طقس" />
+            <item
+                android:id="@+id/A_01"
+                android:icon="@drawable/ash"
+                android:title="اجبيه" />
+            <item
+                android:id="@+id/gam_01"
+                android:icon="@drawable/gam"
+                android:title="العاب" />
+            <item
+                android:id="@+id/moraga_01"
+                android:icon="@drawable/moragaa_ic"
+                android:title=" المراجعة " />
+            <item
+                android:id="@+id/quiz_01"
+                android:icon="@drawable/quiz"
+                android:title="اختبر نفسك" />
+        </menu>
+    </item>
+
+    <item  android:title="تابعونا">
+        <menu>
+        <item
+            android:id="@+id/Face_01"
+            android:icon="@drawable/face"
+            android:title="صفحتنا علي  فيسبوك "
+            />
+
+        </menu>
+    </item>
+
+</menu>
